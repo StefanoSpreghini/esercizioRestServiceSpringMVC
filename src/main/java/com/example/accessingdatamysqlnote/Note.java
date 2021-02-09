@@ -10,15 +10,7 @@ public class Note {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Integer id;
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
+   
   private String content;
 
   public Integer getId() {
@@ -29,5 +21,11 @@ public class Note {
     this.id = id;
   }
 
-  
+  public String getContent() {
+    return content;
+    }
+
+  public void setContent(String content) {
+    this.content = content;
+    }
 }
